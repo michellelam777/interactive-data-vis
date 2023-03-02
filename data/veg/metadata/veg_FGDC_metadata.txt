@@ -1,0 +1,253 @@
+Metadata:
+  Identification_Information:
+    Citation:
+      Citation_Information:
+        Originator: Steve Muller
+        Publication_Date: Unknown
+        Title: 1:10,000 Vegetation, Niwot Ridge LTER Project Area, Colorado
+        Geospatial_Data_Presentation_Form: vector digital data
+        Publication_Information:
+          Publication_Place: Boulder, CO
+          Publisher: Niwot Ridge LTER, Institute of Arctic and Alpine Research (INSTAAR), University of Colorado
+        Online_Linkage: https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-nwt&identifier=919
+    Description:
+      Abstract: Vegetation coverage digitized from 1:10,000 map. Vegetation classification follows Komarkova's (1979) classification system (Braun-Blanquet) units. See Peddle and Duguay (1995) for additional information on digitization and map production for this vegetation coverage. See Braun-Blanquet (1964), Komarkova and Webber (1978), and Komarkova (1979, 1980) for additional information on vegetation classification used in this dataset.
+      Purpose: A vegetation layer/coverage is necessary for some analyses on Niwot Ridge.
+      Supplemental_Information:
+        This coverage generated was outside of the Tundra Ecosystem Analysis and Mapping Laboratory (TEAML) (both by students/workers for Claude Duguay in Canada). May have been compacted from the north somehow. Definitely some errors within. 
+
+        Source map from Komarkova (1980); map digitized in spring of 1997.
+
+        Note, 2019-02-22: This dataset was made in the 1990s and has been minimally maintained since then (e.g. metadata may have been updated). While best reasonable effort has been made to quality check and describe this dataset, the data and metadata are provided largely as produced and described as they were when created.
+
+        This dataset has been converted from coverage to shapefile format for greater user accessibility. Shapefiles do not store topology and so topology from the coverage dataset was not transferred to the shapefile during conversion. If interested in data topology, please see the ArcInfo interchange file, veg.e00 (available in data package download), for the original coverage dataset with topology preserved. An .e00 file can be imported in ArcGIS Desktop applications via ArcToolbox tools: Conversion > To Coverage > Import from E00. It may also be read in to R via the 'readGDAL' function in R package 'rgdal'. Please note if import from .e00, the metadata displayed for the coverage will not be current.
+
+        Publications relevant to dataset:
+        [1] Braun-Blanquet J. 1964. Pflanzensoziologie, Grundzüge der Vegetationskunde. 3 ed. Springer, Vienna and New York. 865 pp.
+        [2] Komarkova V, Webber PJ. 1978. An Alpine Vegetation Map of Niwot Ridge, Colorado, Arctic and Alpine Research. 10:1-29. 10.1080/00040851.1978.12003941
+        [3] Komarkova V. 1979. Alpine vegetation of the Indian Peaks Area, Front Range, Colorado Rocky Mountains. In Tuxen, R. (editor), Flora et vegetatio mundi, VII. Vaduz: Cramer, 591 pp.
+        [4] Komarkova V. 1980. Classification and ordination in the Indian Peaks area, Colorado Rocky Mountains. Vegetatio. 42(1/3): 149-163.
+        [5] Peddle DR, Duguay C. 1995. Incorporating topographic and climatic GIS data into satellite image analysis of an alpine tundra ecosystem, front range, Colorado rocky mountains. Geocarto International. 10:43-60. 10.1080/10106049509354511
+    Time_Period_of_Content:
+      Time_Period_Information:
+        Multiple_Dates/Times:
+          Single_Date/Time:
+            Calendar_Date: 1980
+          Single_Date/Time:
+            Calendar_Date: 1997
+      Currentness_Reference: ground condition
+    Status:
+      Progress: Complete
+      Maintenance_and_Update_Frequency: As needed
+    Spatial_Domain:
+      Bounding_Coordinates:
+        West_Bounding_Coordinate: -105.629480
+        East_Bounding_Coordinate: -105.542511
+        North_Bounding_Coordinate: 40.072845
+        South_Bounding_Coordinate: 40.043658
+      Local_Bounding_Coordinates:
+        Left_Bounding_Coordinate: 446324.406250
+        Right_Bounding_Coordinate: 453721.125000
+        Top_Bounding_Coordinate: 4435983.500000
+        Bottom_Bounding_Coordinate: 4432792.500000
+    Keywords:
+      Theme:
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword: GIS
+        Theme_Keyword: vector
+      Theme:
+        Theme_Keyword_Thesaurus: LTER Controlled Vocabulary
+        Theme_Keyword: alpine
+        Theme_Keyword: biogeography
+        Theme_Keyword: geographic information systems
+        Theme_Keyword: vegetation
+      Theme:
+        Theme_Keyword_Thesaurus: ISO 19115 Topic Category
+        Theme_Keyword: biota
+        Theme_Keyword: environment
+        Theme_Keyword: geoscientificInformation
+      Place:
+        Place_Keyword_Thesaurus: None
+        Place_Keyword: Colorado
+        Place_Keyword: Green Lakes Valley
+        Place_Keyword: Niwot Ridge
+        Place_Keyword: Saddle
+    Access_Constraints: None
+    Use_Constraints: The following acknowledgment should accompany any publication or citation of these data: "Logistical support and/or data were provided by the NSF supported Niwot Ridge (NWT) Long-Term Ecological Research (LTER) project and the University of Colorado (CU) Mountain Research Station (MRS)." The user of NWT LTER data agrees to provide proper acknowledgment with each usage of the data. Citation of the name(s) of the investigator(s) responsible for the data set, in addition to the generic statement above, constitute proper acknowledgment.
+    Point_of_Contact:
+      Contact_Information:
+        Contact_Person_Primary:
+          Contact_Person: Niwot Ridge LTER Information Manager
+          Contact_Organization: University of Colorado at Boulder, Institute of Arctic and Alpine Research (INSTAAR)
+        Contact_Address:
+          Address_Type: mailing address
+          Address: Institute of Arctic and Alpine Research
+          Address: University of Colorado, Campus Box 450
+          City: Boulder
+          State_or_Province: CO
+          Postal_Code: 80303-0450
+          Country: USA
+        Contact_Voice_Telephone: 303-492-6387
+        Contact_Facsimile_Telephone: 303-492-6388
+        Contact_Electronic_Mail_Address: lternwt@colorado.edu
+    Native_Data_Set_Environment: Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 2; ESRI ArcCatalog 8.2.0.700
+  Data_Quality_Information:
+    Logical_Consistency_Report: No information.
+    Completeness_Report: No information.
+    Lineage:
+      Process_Step:
+        Process_Description: Dataset copied.
+        Source_Used_Citation_Abbreviation: d:\gisdata\new_macrosite\10000\veg
+        Process_Date: 20021010
+        Process_Time: 13460900
+      Process_Step:
+        Process_Description: Metadata updated.[Craig Anderson, NWT GRA]
+        Process_Date: 20021010
+        Process_Time: 14265100
+      Process_Step:
+        Process_Description: Coverage imported from .e00 file, then converted to shapefile in ArcMap v10.5.[ATW, NWT PRA]
+        Process_Date: 20190122
+        Process_Time: 18482200
+      Process_Step:
+        Process_Description: Coverage topology fields removed from shapefile attribute table, field names corrected, and .dbf written out in R using package 'foreign' v.0.8-70. Shapefile xml metadata edited for FGDC compliance and written out in R using package 'XML' v3.98-1.16.[CTW, NWT GRA]
+        Process_Date: 20190222
+        Process_Time: 161334
+  Spatial_Data_Organization_Information:
+    Direct_Spatial_Reference_Method: Vector
+    Point_and_Vector_Object_Information:
+      SDTS_Terms_Description:
+        SDTS_Point_and_Vector_Object_Type: G-polygon
+        Point_and_Vector_Object_Count: 1233
+  Spatial_Reference_Information:
+    Horizontal_Coordinate_System_Definition:
+      Planar:
+        Grid_Coordinate_System:
+          Grid_Coordinate_System_Name: Universal Transverse Mercator
+          Universal_Transverse_Mercator:
+            UTM_Zone_Number: 13
+            Transverse_Mercator:
+              Scale_Factor_at_Central_Meridian: 0.9996
+              Longitude_of_Central_Meridian: -105.0
+              Latitude_of_Projection_Origin: 0.0
+              False_Easting: 500000.0
+              False_Northing: 0.0
+        Planar_Coordinate_Information:
+          Planar_Coordinate_Encoding_Method: coordinate pair
+          Coordinate_Representation:
+            Abscissa_Resolution: 0.000004
+            Ordinate_Resolution: 0.000004
+          Planar_Distance_Units: meters
+      Geodetic_Model:
+        Horizontal_Datum_Name: North American Datum of 1983
+        Ellipsoid_Name: Geodetic Reference System 80
+        Semi-major_Axis: 6378137.000000
+        Denominator_of_Flattening_Ratio: 298.257222
+  Entity_and_Attribute_Information:
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: veg
+        Entity_Type_Definition: Polygon feature
+        Entity_Type_Definition_Source: Esri
+      Attribute:
+        Attribute_Label: FID
+        Attribute_Definition: Internal feature number.
+        Attribute_Definition_Source: ESRI
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Sequential unique whole numbers that are automatically generated.
+      Attribute:
+        Attribute_Label: SHAPE
+        Attribute_Definition: Feature geometry.
+        Attribute_Definition_Source: ESRI
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Coordinates defining the features.
+      Attribute:
+        Attribute_Label: AREA
+        Attribute_Definition: Area of feature in internal units squared.
+        Attribute_Definition_Source: ESRI
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Positive real numbers that are automatically generated.
+      Attribute:
+        Attribute_Label: PERIMETER
+        Attribute_Definition: Perimeter of feature in internal units.
+        Attribute_Definition_Source: ESRI
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Positive real numbers that are automatically generated.
+      Attribute:
+        Attribute_Label: VEG
+        Attribute_Definition: Internal feature number.
+        Attribute_Definition_Source: Esri
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Sequential unique whole numbers that are automatically generated.
+      Attribute:
+        Attribute_Label: VEG_ID
+        Attribute_Definition: User-defined feature number.
+        Attribute_Definition_Source: Esri
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Vegetation type group ID (same as NUM).
+      Attribute:
+        Attribute_Label: TYPE
+        Attribute_Definition: Vegetation classification type.
+        Attribute_Definition_Source: NWT LTER IM
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: 25 distinct classification types, based on Komarkova 1979 and Komarkova 1980.
+      Attribute:
+        Attribute_Label: NUM
+        Attribute_Definition: User-defined feature number.
+        Attribute_Definition_Source: Esri
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Vegetation type group ID (same as VEG-ID).
+  Distribution_Information:
+    Distributor:
+      Contact_Information:
+        Contact_Person_Primary:
+          Contact_Person: Niwot Ridge LTER Information Manager
+          Contact_Organization: University of Colorado at Boulder, Institute of Arctic and Alpine Research (INSTAAR)
+        Contact_Address:
+          Address_Type: mailing address
+          Address: Institute of Arctic and Alpine Research
+          Address: University of Colorado, Campus Box 450
+          City: Boulder
+          State_or_Province: CO
+          Postal_Code: 80303-0450
+          Country: USA
+        Contact_Voice_Telephone: 303-492-6387
+        Contact_Facsimile_Telephone: 303-492-6388
+        Contact_Electronic_Mail_Address: lternwt@colorado.edu
+    Resource_Description: knb-lter-nwt.919
+    Distribution_Liability: The NSF supported NWT LTER project nor the CU MRS shall not be held liable for improper or incorrect use of the data described and/or contained herein, nor assumes liability for misuse, manipulation or distribution of the data. These data and related graphics (i.e. GIF or JPG format files) are not legal documents and are not intended to be used as such. The information contained in these data is dynamic and versions may be updated over time. The data are not better than the original sources from which they were derived. The user of these data should be aware that, while efforts have been taken to ensure that these data are of the highest quality, there is no guarantee of perfection for the data contained herein and the possibility of errors exists. It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular. Users assume responsibility to determine the usability of the dataset, as well as dataset resolution and accuracy, for their purposes. It is not recommended that the data be used at a scale larger than source scale. The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data. NWT LTER nor CU MRS gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data. Although these data have been processed successfully on computer systems at CU, no warranty expressed or implied is made regarding the utility of the data on other systems for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This disclaimer applies both to individual use of the data and aggregate use with other data.
+    Standard_Order_Process:
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: zip
+          Format_Version_Number: 6.3.5
+          Format_Information_Content: ESRI shapefile, xml metadata, and original coverage dataset ESRI ArcInfo interchange file (.e00)
+          File_Decompression_Technique: Extract files using any application that uncompresses a zipped file; no specific recommendation.
+          Transfer_Size: 1462261
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-nwt&identifier=919
+      Fees: None
+      Ordering_Instructions: Obtain data online from Environmental Data Initiative (EDI) Data Portal (https://portal.edirepository.org), package ID: knb-lter-nwt.919
+  Metadata_Reference_Information:
+    Metadata_Date: 20190222
+    Metadata_Contact:
+      Contact_Information:
+        Contact_Person_Primary:
+          Contact_Person: Niwot Ridge LTER Information Manager
+          Contact_Organization: University of Colorado at Boulder, Institute of Arctic and Alpine Research (INSTAAR)
+        Contact_Address:
+          Address_Type: mailing address
+          Address: Institute of Arctic and Alpine Research
+          Address: University of Colorado, Campus Box 450
+          City: Boulder
+          State_or_Province: CO
+          Postal_Code: 80303-0450
+          Country: USA
+        Contact_Voice_Telephone: 303-492-6387
+        Contact_Facsimile_Telephone: 303-492-6388
+        Contact_Electronic_Mail_Address: lternwt@colorado.edu
+    Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+    Metadata_Standard_Version: FGDC-STD-001-1998
+    Metadata_Time_Convention: local time

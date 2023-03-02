@@ -1,0 +1,7 @@
+Manifest file for knb-lter-nwt.919.1-4c9184f37cff01bcdc32dc486ec36961.zip created on Tue Oct 06 11:47:27 MDT 2020
+veg.zip (1481326 bytes)
+veg_browse.jpg (2304244 bytes)
+veg_FGDC_metadata.txt (15792 bytes)
+knb-lter-nwt.919.1.xml (19702 bytes)
+knb-lter-nwt.919.1.txt (11517 bytes)
+knb-lter-nwt.919.1.report.xml (37837 bytes)

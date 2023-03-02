@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-nwt.930.1"
+  system="https://pasta.edirepository.org"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=nwt,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>read</permission>
+      <permission>write</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/6d9dba05d95be3cd18aaaa14f09faced</alternateIdentifier>
+    <title>Landmarks, Niwot Ridge LTER Project Area, Colorado</title>
+    <creator>
+      <organizationName>University of Colorado</organizationName>
+      <address>
+        <deliveryPoint>INSTAAR,4001 Discovery Dr.</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <postalCode>80309-0450</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>lternwt@colorado.edu</electronicMailAddress>
+    </creator>
+    <metadataProvider id="NWT_IM">
+      <organizationName>Niwot Ridge LTER</organizationName>
+      <positionName>Information Manager</positionName>
+      <address>
+        <deliveryPoint>4001 Discovery Drive, UCB 450</deliveryPoint>
+        <deliveryPoint>University of Colorado</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <postalCode>80303</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>lternwt@colorado.edu</electronicMailAddress>
+      <onlineUrl>http://niwot.colorado.edu/</onlineUrl>
+    </metadataProvider>
+    <associatedParty>
+      <references>NWT_IM</references>
+      <role>pointOfContact</role>
+    </associatedParty>
+    <pubDate>2019-02-22</pubDate>
+    <language>English</language>
+    <abstract>Point shapefile of commonly referenced locations at Niwot Ridge, Green Lakes Valley, and surrounding area.</abstract>
+    <keywordSet>
+      <keyword keywordType="theme">GIS</keyword>
+      <keyword keywordType="theme">vector</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">alpine</keyword>
+      <keyword keywordType="theme">geographic information systems</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">geoscientificInformation</keyword>
+      <keyword keywordType="theme">location</keyword>
+      <keywordThesaurus>ISO 19115 Topic Category</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Colorado</keyword>
+      <keyword keywordType="place">Green Lakes Valley</keyword>
+      <keyword keywordType="place">Niwot Ridge</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data (“Data User” herein) is required to cite it
+  appropriately in any publication that results from its use. The Data
+  User should realize that these data may be actively used by others for
+  ongoing research and that coordination may be necessary to prevent
+  duplicate publication. The Data User is urged to contact the authors
+  of these data if any questions about methodology or results occur.
+  Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study. While substantial efforts are made to
+  ensure the accuracy of data and associated documentation, complete
+  accuracy of data sets cannot be guaranteed. All data are made
+  available "as is." The Data User should be aware, however,
+  that data are updated periodically and it is the responsibility of the
+  Data User to check for new versions of the data. The data authors and
+  the repository where these data were obtained shall not be liable for
+  damages resulting from any use or misinterpretation of the data. Thank
+  you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Green Lakes Valley, Niwot Ridge, and surrounding area, Niwot Ridge LTER, Colorado</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-105.651027</westBoundingCoordinate>
+          <eastBoundingCoordinate>-105.535446</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.077886</northBoundingCoordinate>
+          <southBoundingCoordinate>40.019530</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1990</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2019-02-22</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <purpose>Point locations of landmarks or commonly referenced sites are useful for map display and annotation.</purpose>
+    <maintenance>
+      <description>
+        <para>2011-06-03: Dataset copied.[NWT LTER IM]</para>
+        <para>2019-02-22: Attribute table field names corrected and .dbf written out in R using package 'foreign' v.0.8-70. Shapefile xml metadata edited for FGDC compliance and written out in R using package 'XML' v3.98-1.16.[CTW, NWT GRA]</para>
+      </description>
+      <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <references>NWT_IM</references>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Methods</title>
+            <para>No information on dataset creator, date of creation, nor methods or sources used to generate dataset. Used in Figure 1.5 (Niwot Ridge overview map) in Bowman (2001). Temporal coverage specified with begin date of 1990, when Tundra Lab construction was completed, and spans to present date, however other locations annotated existed prior to 1990.</para>
+          </section>
+          <section>
+            <title>References</title>
+            <para>
+              <orderedlist>
+                <listitem>
+                  <para>Bowman WD. 2001. Introduction: historical perspective and significance of alpine ecosystem studies. In Bowman WD, Seastedt TR (eds.), Structure and Function of an Alpine Ecosystem, Niwot Ridge, Colorado. New York: Oxford University Press. 337 pp.</para>
+                </listitem>
+              </orderedlist>
+            </para>
+          </section>
+        </description>
+      </methodStep>
+      <qualityControl>
+        <description>
+          <para>Note, 2019-02-22: This dataset was made in the 1990s and has been minimally maintained since then (e.g. metadata may have been updated). While best reasonable effort has been made to quality check and describe this dataset, the data and metadata are provided largely as produced and described as they were when created. See .shp.xml metadata file in zipped data folder, or FGDC metadata text file provided with this data package for additional FGDC-compliant metadata concerning data accuracy and data quality.</para>
+        </description>
+      </qualityControl>
+    </methods>
+    <project>
+      <title>Effects of Climate Change in the Colorado Alpine: Ecosystem Response to Altered Snowpack and Rainfall Regimes</title>
+      <personnel>
+        <organizationName>Niwot Ridge LTER</organizationName>
+        <role>pointOfContact</role>
+      </personnel>
+      <funding>National Science Foundation:9211776</funding>
+    </project>
+    <spatialVector id="nwt_annotation_pnt.zip">
+      <entityName>nwt_annotation_pnt</entityName>
+      <entityDescription>Landmarks, Niwot Ridge LTER Project Area, Colorado</entityDescription>
+      <physical>
+        <objectName>nwt_annotation_pnt.zip</objectName>
+        <size unit="byte">11150</size>
+        <authentication method="MD5">d6c8789ae88414db8dc6a316dfcdeb06</authentication>
+        <compressionMethod>zip</compressionMethod>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>.zip containing ESRI shapefile and xml metadata</formatName>
+            <formatVersion>zip: Version 6.3.5,
+ESRI shapefile and xml metadata: Version 6.2 (Build 9200); Esri ArcGIS 10.5.0.6491</formatVersion>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/930/1/3a7f70953338ba0096eb7b63272a6b97</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>FID</attributeName>
+          <attributeDefinition>Internal feature number.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">OID</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sequential unique whole numbers that are automatically generated.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SHAPE</attributeName>
+          <attributeDefinition>Feature geometry.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">Geometry</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Coordinates defining the features.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NAME</attributeName>
+          <attributeDefinition>Name of landmark.</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Free text field.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <geometry>Point</geometry>
+      <geometricObjectCount>40</geometricObjectCount>
+      <spatialReference>
+        <horizCoordSysName>NAD_1983_UTM_Zone_13N</horizCoordSysName>
+      </spatialReference>
+    </spatialVector>
+    <otherEntity>
+      <entityName>nwt_annotation_pnt_browse</entityName>
+      <entityDescription>JPG graphic showing data extent</entityDescription>
+      <physical>
+        <objectName>nwt_annotation_pnt_browse.jpg</objectName>
+        <size unit="byte">1921957</size>
+        <authentication method="MD5">15afd0204df0d0f225409c435503bca5</authentication>
+        <compressionMethod>None</compressionMethod>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>JPG file</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/930/1/5565ae073f02518d0b9b7b08a14fc556</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>JPG</entityType>
+    </otherEntity>
+    <otherEntity>
+      <entityName>nwt_annotation_pnt_FGDC_metadata</entityName>
+      <entityDescription>ESRI shapefile and xml metadata FGDC metadata in text format</entityDescription>
+      <physical>
+        <objectName>nwt_annotation_pnt_FGDC_metadata.txt</objectName>
+        <size unit="byte">12080</size>
+        <authentication method="MD5">70ebbea83c0bbd44213a6d9f68f5c2ce</authentication>
+        <compressionMethod>None</compressionMethod>
+        <characterEncoding>ANSI</characterEncoding>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>Natural language text</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/930/1/28b9554b0a5f7bb3c5f6a520a3754554</url>
+          </online>
+        </distribution>
+      </physical>
+      <methods>
+        <methodStep>
+          <description>FGDC text file validated and generated using USGS Geospatial Metadata Validation Service (https://mrdata.usgs.gov/validation/).</description>
+        </methodStep>
+        <qualityControl>
+          <description>Metadata must pass FGDC validation without bad elements, missing elements, or warnings from mp (metadata parser).</description>
+        </qualityControl>
+      </methods>
+      <entityType>text</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

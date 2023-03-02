@@ -1,0 +1,365 @@
+
+  
+    
+      uid=nwt,o=LTER,dc=ecoinformatics,dc=org
+      read
+      write
+    
+    
+      public
+      read
+    
+  
+  
+    doi:10.6073/pasta/7b7fac3615a689207cc10c4464d9c882
+    1:10,000 Vegetation, Niwot Ridge LTER Project Area, Colorado
+    
+      Steve Muller
+      University of Colorado
+      			INSTAAR,4001 Discovery Dr.
+			Boulder, CO 80309-0450  USA
+    
+    
+      Niwot Ridge LTER
+      Information Manager
+      			4001 Discovery Drive, UCB 450
+			University of Colorado
+			Boulder, CO 80303  United States
+      lternwt@colorado.edu
+      http://niwot.colorado.edu/
+    
+    
+      NWT_IM
+      pointOfContact
+    
+    2019-02-22
+    English
+    Vegetation coverage digitized from 1:10,000 map. Vegetation classification follows Komarkova's (1979) classification system (Braun-Blanquet) units. See Peddle and Duguay (1995) for additional information on digitization and map production for this vegetation coverage. See Braun-Blanquet (1964), Komarkova and Webber (1978), and Komarkova (1979, 1980) for additional information on vegetation classification used in this dataset.
+    
+      GIS
+      vector
+      None
+    
+    
+      alpine
+      biogeography
+      geographic information systems
+      vegetation
+      LTER Controlled Vocabulary
+    
+    
+      biota
+      environment
+      geoscientificInformation
+      ISO 19115 Topic Category
+    
+    
+      Colorado
+      Green Lakes Valley
+      Niwot Ridge
+      Saddle
+      None
+    
+    This coverage generated was outside of the Tundra Ecosystem Analysis and Mapping Laboratory (TEAML) (both by students/workers for Claude Duguay in Canada). May have been compacted from the north somehow. Definitely some errors within.
+
+Source map from Komarkova (1980); map digitized in spring of 1997.
+    
+      
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data (“Data User” herein) is required to cite it
+  appropriately in any publication that results from its use. The Data
+  User should realize that these data may be actively used by others for
+  ongoing research and that coordination may be necessary to prevent
+  duplicate publication. The Data User is urged to contact the authors
+  of these data if any questions about methodology or results occur.
+  Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study. While substantial efforts are made to
+  ensure the accuracy of data and associated documentation, complete
+  accuracy of data sets cannot be guaranteed. All data are made
+  available "as is." The Data User should be aware, however,
+  that data are updated periodically and it is the responsibility of the
+  Data User to check for new versions of the data. The data authors and
+  the repository where these data were obtained shall not be liable for
+  damages resulting from any use or misinterpretation of the data. Thank
+  you.
+
+    
+    
+      
+        Green Lakes Valley, Niwot Ridge, and surrounding area, Niwot Ridge LTER, Colorado
+        
+          -105.629480
+          -105.542511
+          40.072845
+          40.043658
+        
+      
+      
+        
+          
+            1980
+          
+          
+            1997
+          
+        
+      
+    
+    A vegetation layer/coverage is necessary for some analyses on Niwot Ridge.
+    
+      
+        2002-10-10: Dataset copied.
+        2002-10-10: Metadata updated.[Craig Anderson, NWT GRA]
+        2019-01-22: Coverage imported from .e00 file, then converted to shapefile in ArcMap v10.5.[ATW, NWT PRA]
+        2019-02-22: Coverage topology fields removed from shapefile attribute table, field names corrected, and .dbf written out in R using package 'foreign' v.0.8-70. Shapefile xml metadata edited for FGDC compliance and written out in R using package 'XML' v3.98-1.16.[CTW, NWT GRA]
+      
+      asNeeded
+    
+    
+      NWT_IM
+    
+    
+      
+        
+          
+            Methods
+            Vegetation coverage digitized from 1:10,000 map. Vegetation classification follows Komarkova's (1979) classification system (Braun-Blanquet) units. See Peddle and Duguay (1995) for additional information on digitization and map production for this vegetation coverage. See Braun-Blanquet (1964), Komarkova and Webber (1978), and Komarkova (1979, 1980) for additional information on vegetation classification used in this dataset.
+
+Source map from Komarkova (1980); map digitized in spring of 1997.
+            This dataset has been converted from coverage to shapefile format for greater user accessibility. Shapefiles do not store topology and so topology from the coverage dataset was not transferred to the shapefile during conversion. If interested in data topology, please see the ArcInfo interchange file, veg.e00 (available in data package download), for the original coverage dataset with topology preserved. An .e00 file can be imported in ArcGIS Desktop applications via ArcToolbox tools: Conversion > To Coverage > Import from E00. It may also be read in to R via the 'readGDAL' function in R package 'rgdal'. Please note if import from .e00, the metadata displayed for the coverage will not be current.
+          
+          
+            References
+            
+              
+                
+                  Braun-Blanquet J. 1964. Pflanzensoziologie, Grundzüge der Vegetationskunde. 3 ed. Springer, Vienna and New York. 865 pp.
+                
+                
+                  Komarkova V, Webber PJ. 1978. An Alpine Vegetation Map of Niwot Ridge, Colorado, Arctic and Alpine Research. 10:1-29. 10.1080/00040851.1978.12003941
+                
+                
+                  Komarkova V. 1979. Alpine vegetation of the Indian Peaks Area, Front Range, Colorado Rocky Mountains. In Tuxen, R. (editor), Flora et vegetatio mundi, VII. Vaduz: Cramer, 591 pp.
+                
+                
+                  Komarkova V. 1980. Classification and ordination in the Indian Peaks area, Colorado Rocky Mountains. Vegetatio. 42(1/3): 149-163.
+                
+                
+                  Peddle DR, Duguay C. 1995. Incorporating topographic and climatic GIS data into satellite image analysis of an alpine tundra ecosystem, front range, Colorado rocky mountains. Geocarto International. 10:43-60. 10.1080/10106049509354511
+                
+              
+            
+          
+        
+      
+      
+        
+          Note, 2019-02-22: This dataset was made in the 1990s and has been minimally maintained since then (e.g. metadata may have been updated). While best reasonable effort has been made to quality check and describe this dataset, the data and metadata are provided largely as produced and described as they were when created. See .shp.xml metadata file in zipped data folder, or FGDC metadata text file provided with this data package for additional FGDC-compliant metadata concerning data accuracy and data quality.
+        
+      
+    
+    
+      Effects of Climate Change in the Colorado Alpine: Ecosystem Response to Altered Snowpack and Rainfall Regimes
+      
+        Niwot Ridge LTER
+        pointOfContact
+      
+      National Science Foundation:9211776
+    
+    
+      veg
+      1:10,000 Vegetation, Niwot Ridge LTER Project Area, Colorado
+      
+        veg.zip
+        1481326
+        18c8d456c4e720ac7f4af390ce0cb013
+        zip
+        
+          
+            .zip containing ESRI shapefile, xml metadata, and original coverage dataset ESRI ArcInfo interchange file (.e00) 
+            zip: Version 6.3.5,
+ESRI shapefile: Version 6.2 (Build 9200); Esri ArcGIS 10.5.0.6491,
+ESRI ArcInfo interchange file: Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 2; ESRI ArcCatalog 8.2.0.700
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/919/1/e3605324dc9ab85445908aec0dd4b4e7
+          
+        
+      
+      
+        
+          FID
+          Internal feature number.
+          OID
+          
+            
+              
+                
+                  Sequential unique whole numbers that are automatically generated.
+                
+              
+            
+          
+        
+        
+          SHAPE
+          Feature geometry.
+          Geometry
+          
+            
+              
+                
+                  Coordinates defining the features.
+                
+              
+            
+          
+        
+        
+          AREA
+          Area of feature in internal units squared.
+          single
+          
+            
+              
+                
+                  Positive real numbers that are automatically generated.
+                
+              
+            
+          
+        
+        
+          PERIMETER
+          Perimeter of feature in internal units.
+          single
+          
+            
+              
+                
+                  Positive real numbers that are automatically generated.
+                
+              
+            
+          
+        
+        
+          VEG
+          Internal feature number.
+          integer
+          
+            
+              
+                
+                  Sequential unique whole numbers that are automatically generated.
+                
+              
+            
+          
+        
+        
+          VEG_ID
+          User-defined feature number.
+          integer
+          
+            
+              
+                
+                  Vegetation type group ID (same as NUM).
+                
+              
+            
+          
+        
+        
+          TYPE
+          Vegetation classification type.
+          string
+          
+            
+              
+                
+                  25 distinct classification types, based on Komarkova 1979 and Komarkova 1980.
+                
+              
+            
+          
+        
+        
+          NUM
+          User-defined feature number.
+          integer
+          
+            
+              
+                
+                  Vegetation type group ID (same as VEG-ID).
+                
+              
+            
+          
+        
+      
+      Polygon
+      1233
+      
+        NAD_1983_UTM_Zone_13N
+      
+    
+    
+      veg_browse
+      JPG graphic showing data extent
+      
+        veg_browse.jpg
+        2304244
+        f940bdf7e6db171ae28f986b5f4fe7c7
+        None
+        
+          
+            JPG file
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/919/1/952f3f3d9fd6db9a17be57eee701e00b
+          
+        
+      
+      JPG
+    
+    
+      veg_FGDC_metadata
+      ESRI shapefile FGDC metadata in text format
+      
+        veg_FGDC_metadata.txt
+        15792
+        094e7b96feecd2013dcc7e1d2a28e135
+        None
+        ANSI
+        
+          
+            Natural language text
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/919/1/265be69da788cb921de0bdccd3e55381
+          
+        
+      
+      
+        
+          FGDC text file validated and generated using USGS Geospatial Metadata Validation Service (https://mrdata.usgs.gov/validation/).
+        
+        
+          Metadata must pass FGDC validation without bad elements, missing elements, or warnings from mp (metadata parser).
+        
+      
+      text
+    
+  

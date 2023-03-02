@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-nwt.919.1"
+  system="https://pasta.edirepository.org"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=nwt,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>read</permission>
+      <permission>write</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/7b7fac3615a689207cc10c4464d9c882</alternateIdentifier>
+    <title>1:10,000 Vegetation, Niwot Ridge LTER Project Area, Colorado</title>
+    <creator>
+      <individualName>
+        <givenName>Steve</givenName>
+        <surName>Muller</surName>
+      </individualName>
+      <organizationName>University of Colorado</organizationName>
+      <address>
+        <deliveryPoint>INSTAAR,4001 Discovery Dr.</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <postalCode>80309-0450</postalCode>
+        <country>USA</country>
+      </address>
+    </creator>
+    <metadataProvider id="NWT_IM">
+      <organizationName>Niwot Ridge LTER</organizationName>
+      <positionName>Information Manager</positionName>
+      <address>
+        <deliveryPoint>4001 Discovery Drive, UCB 450</deliveryPoint>
+        <deliveryPoint>University of Colorado</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <postalCode>80303</postalCode>
+        <country>United States</country>
+      </address>
+      <electronicMailAddress>lternwt@colorado.edu</electronicMailAddress>
+      <onlineUrl>http://niwot.colorado.edu/</onlineUrl>
+    </metadataProvider>
+    <associatedParty>
+      <references>NWT_IM</references>
+      <role>pointOfContact</role>
+    </associatedParty>
+    <pubDate>2019-02-22</pubDate>
+    <language>English</language>
+    <abstract>Vegetation coverage digitized from 1:10,000 map. Vegetation classification follows Komarkova's (1979) classification system (Braun-Blanquet) units. See Peddle and Duguay (1995) for additional information on digitization and map production for this vegetation coverage. See Braun-Blanquet (1964), Komarkova and Webber (1978), and Komarkova (1979, 1980) for additional information on vegetation classification used in this dataset.</abstract>
+    <keywordSet>
+      <keyword keywordType="theme">GIS</keyword>
+      <keyword keywordType="theme">vector</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">alpine</keyword>
+      <keyword keywordType="theme">biogeography</keyword>
+      <keyword keywordType="theme">geographic information systems</keyword>
+      <keyword keywordType="theme">vegetation</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">biota</keyword>
+      <keyword keywordType="theme">environment</keyword>
+      <keyword keywordType="theme">geoscientificInformation</keyword>
+      <keywordThesaurus>ISO 19115 Topic Category</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Colorado</keyword>
+      <keyword keywordType="place">Green Lakes Valley</keyword>
+      <keyword keywordType="place">Niwot Ridge</keyword>
+      <keyword keywordType="place">Saddle</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <additionalInfo>This coverage generated was outside of the Tundra Ecosystem Analysis and Mapping Laboratory (TEAML) (both by students/workers for Claude Duguay in Canada). May have been compacted from the north somehow. Definitely some errors within.&#xd;
+&#xd;
+Source map from Komarkova (1980); map digitized in spring of 1997.</additionalInfo>
+    <intellectualRights>
+      <para>
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data (“Data User” herein) is required to cite it
+  appropriately in any publication that results from its use. The Data
+  User should realize that these data may be actively used by others for
+  ongoing research and that coordination may be necessary to prevent
+  duplicate publication. The Data User is urged to contact the authors
+  of these data if any questions about methodology or results occur.
+  Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study. While substantial efforts are made to
+  ensure the accuracy of data and associated documentation, complete
+  accuracy of data sets cannot be guaranteed. All data are made
+  available "as is." The Data User should be aware, however,
+  that data are updated periodically and it is the responsibility of the
+  Data User to check for new versions of the data. The data authors and
+  the repository where these data were obtained shall not be liable for
+  damages resulting from any use or misinterpretation of the data. Thank
+  you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Green Lakes Valley, Niwot Ridge, and surrounding area, Niwot Ridge LTER, Colorado</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-105.629480</westBoundingCoordinate>
+          <eastBoundingCoordinate>-105.542511</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.072845</northBoundingCoordinate>
+          <southBoundingCoordinate>40.043658</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1980</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>1997</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <purpose>A vegetation layer/coverage is necessary for some analyses on Niwot Ridge.</purpose>
+    <maintenance>
+      <description>
+        <para>2002-10-10: Dataset copied.</para>
+        <para>2002-10-10: Metadata updated.[Craig Anderson, NWT GRA]</para>
+        <para>2019-01-22: Coverage imported from .e00 file, then converted to shapefile in ArcMap v10.5.[ATW, NWT PRA]</para>
+        <para>2019-02-22: Coverage topology fields removed from shapefile attribute table, field names corrected, and .dbf written out in R using package 'foreign' v.0.8-70. Shapefile xml metadata edited for FGDC compliance and written out in R using package 'XML' v3.98-1.16.[CTW, NWT GRA]</para>
+      </description>
+      <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <references>NWT_IM</references>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Methods</title>
+            <para>Vegetation coverage digitized from 1:10,000 map. Vegetation classification follows Komarkova's (1979) classification system (Braun-Blanquet) units. See Peddle and Duguay (1995) for additional information on digitization and map production for this vegetation coverage. See Braun-Blanquet (1964), Komarkova and Webber (1978), and Komarkova (1979, 1980) for additional information on vegetation classification used in this dataset.
+
+Source map from Komarkova (1980); map digitized in spring of 1997.</para>
+            <para>This dataset has been converted from coverage to shapefile format for greater user accessibility. Shapefiles do not store topology and so topology from the coverage dataset was not transferred to the shapefile during conversion. If interested in data topology, please see the ArcInfo interchange file, veg.e00 (available in data package download), for the original coverage dataset with topology preserved. An .e00 file can be imported in ArcGIS Desktop applications via ArcToolbox tools: Conversion &gt; To Coverage &gt; Import from E00. It may also be read in to R via the 'readGDAL' function in R package 'rgdal'. Please note if import from .e00, the metadata displayed for the coverage will not be current.</para>
+          </section>
+          <section>
+            <title>References</title>
+            <para>
+              <orderedlist>
+                <listitem>
+                  <para>Braun-Blanquet J. 1964. Pflanzensoziologie, Grundzüge der Vegetationskunde. 3 ed. Springer, Vienna and New York. 865 pp.</para>
+                </listitem>
+                <listitem>
+                  <para>Komarkova V, Webber PJ. 1978. An Alpine Vegetation Map of Niwot Ridge, Colorado, Arctic and Alpine Research. 10:1-29. 10.1080/00040851.1978.12003941</para>
+                </listitem>
+                <listitem>
+                  <para>Komarkova V. 1979. Alpine vegetation of the Indian Peaks Area, Front Range, Colorado Rocky Mountains. In Tuxen, R. (editor), Flora et vegetatio mundi, VII. Vaduz: Cramer, 591 pp.</para>
+                </listitem>
+                <listitem>
+                  <para>Komarkova V. 1980. Classification and ordination in the Indian Peaks area, Colorado Rocky Mountains. Vegetatio. 42(1/3): 149-163.</para>
+                </listitem>
+                <listitem>
+                  <para>Peddle DR, Duguay C. 1995. Incorporating topographic and climatic GIS data into satellite image analysis of an alpine tundra ecosystem, front range, Colorado rocky mountains. Geocarto International. 10:43-60. 10.1080/10106049509354511</para>
+                </listitem>
+              </orderedlist>
+            </para>
+          </section>
+        </description>
+      </methodStep>
+      <qualityControl>
+        <description>
+          <para>Note, 2019-02-22: This dataset was made in the 1990s and has been minimally maintained since then (e.g. metadata may have been updated). While best reasonable effort has been made to quality check and describe this dataset, the data and metadata are provided largely as produced and described as they were when created. See .shp.xml metadata file in zipped data folder, or FGDC metadata text file provided with this data package for additional FGDC-compliant metadata concerning data accuracy and data quality.</para>
+        </description>
+      </qualityControl>
+    </methods>
+    <project>
+      <title>Effects of Climate Change in the Colorado Alpine: Ecosystem Response to Altered Snowpack and Rainfall Regimes</title>
+      <personnel>
+        <organizationName>Niwot Ridge LTER</organizationName>
+        <role>pointOfContact</role>
+      </personnel>
+      <funding>National Science Foundation:9211776</funding>
+    </project>
+    <spatialVector id="veg.zip">
+      <entityName>veg</entityName>
+      <entityDescription>1:10,000 Vegetation, Niwot Ridge LTER Project Area, Colorado</entityDescription>
+      <physical>
+        <objectName>veg.zip</objectName>
+        <size unit="byte">1481326</size>
+        <authentication method="MD5">18c8d456c4e720ac7f4af390ce0cb013</authentication>
+        <compressionMethod>zip</compressionMethod>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>.zip containing ESRI shapefile, xml metadata, and original coverage dataset ESRI ArcInfo interchange file (.e00) </formatName>
+            <formatVersion>zip: Version 6.3.5,
+ESRI shapefile: Version 6.2 (Build 9200); Esri ArcGIS 10.5.0.6491,
+ESRI ArcInfo interchange file: Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 2; ESRI ArcCatalog 8.2.0.700</formatVersion>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/919/1/e3605324dc9ab85445908aec0dd4b4e7</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>FID</attributeName>
+          <attributeDefinition>Internal feature number.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">OID</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sequential unique whole numbers that are automatically generated.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>SHAPE</attributeName>
+          <attributeDefinition>Feature geometry.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">Geometry</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Coordinates defining the features.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>AREA</attributeName>
+          <attributeDefinition>Area of feature in internal units squared.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">single</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Positive real numbers that are automatically generated.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>PERIMETER</attributeName>
+          <attributeDefinition>Perimeter of feature in internal units.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">single</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Positive real numbers that are automatically generated.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>VEG</attributeName>
+          <attributeDefinition>Internal feature number.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">integer</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sequential unique whole numbers that are automatically generated.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>VEG_ID</attributeName>
+          <attributeDefinition>User-defined feature number.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">integer</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Vegetation type group ID (same as NUM).</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>TYPE</attributeName>
+          <attributeDefinition>Vegetation classification type.</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>25 distinct classification types, based on Komarkova 1979 and Komarkova 1980.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>NUM</attributeName>
+          <attributeDefinition>User-defined feature number.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html">integer</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Vegetation type group ID (same as VEG-ID).</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <geometry>Polygon</geometry>
+      <geometricObjectCount>1233</geometricObjectCount>
+      <spatialReference>
+        <horizCoordSysName>NAD_1983_UTM_Zone_13N</horizCoordSysName>
+      </spatialReference>
+    </spatialVector>
+    <otherEntity>
+      <entityName>veg_browse</entityName>
+      <entityDescription>JPG graphic showing data extent</entityDescription>
+      <physical>
+        <objectName>veg_browse.jpg</objectName>
+        <size unit="byte">2304244</size>
+        <authentication method="MD5">f940bdf7e6db171ae28f986b5f4fe7c7</authentication>
+        <compressionMethod>None</compressionMethod>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>JPG file</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/919/1/952f3f3d9fd6db9a17be57eee701e00b</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>JPG</entityType>
+    </otherEntity>
+    <otherEntity>
+      <entityName>veg_FGDC_metadata</entityName>
+      <entityDescription>ESRI shapefile FGDC metadata in text format</entityDescription>
+      <physical>
+        <objectName>veg_FGDC_metadata.txt</objectName>
+        <size unit="byte">15792</size>
+        <authentication method="MD5">094e7b96feecd2013dcc7e1d2a28e135</authentication>
+        <compressionMethod>None</compressionMethod>
+        <characterEncoding>ANSI</characterEncoding>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>Natural language text</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/919/1/265be69da788cb921de0bdccd3e55381</url>
+          </online>
+        </distribution>
+      </physical>
+      <methods>
+        <methodStep>
+          <description>FGDC text file validated and generated using USGS Geospatial Metadata Validation Service (https://mrdata.usgs.gov/validation/).</description>
+        </methodStep>
+        <qualityControl>
+          <description>Metadata must pass FGDC validation without bad elements, missing elements, or warnings from mp (metadata parser).</description>
+        </qualityControl>
+      </methods>
+      <entityType>text</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

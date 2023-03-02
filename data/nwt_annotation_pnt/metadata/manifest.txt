@@ -1,0 +1,7 @@
+Manifest file for knb-lter-nwt.930.1-4c9184f37cff01bcdc32dc486ec36961.zip created on Sat Feb 19 20:19:02 MST 2022
+nwt_annotation_pnt.zip (11150 bytes)
+nwt_annotation_pnt_browse.jpg (1921957 bytes)
+nwt_annotation_pnt_FGDC_metadata.txt (12080 bytes)
+knb-lter-nwt.930.1.xml (13591 bytes)
+knb-lter-nwt.930.1.txt (7446 bytes)
+knb-lter-nwt.930.1.report.xml (38076 bytes)

@@ -1,0 +1,263 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: William F. Manley
+      Originator: Eric G. Parrish
+      Originator: Leanne R. Lestak
+      Publication_Date: 20090615
+      Title: Polygon Shapefile Outlining Extent of the "NWT" Project Area, Niwot Ridge LTER Project Area, Colorado
+      Edition: Version 1
+      Geospatial_Data_Presentation_Form: vector digital data
+      Series_Information:
+        Series_Name: High-Resolution Orthorectified Imagery and Digital Elevation Models for Study of Environmental Change at Niwot Ridge and Green Lakes Valley, Colorado
+        Issue_Identification: Extent of "NWT" Project Area
+      Publication_Information:
+        Publication_Place: Boulder, CO
+        Publisher: University of Colorado, Institute of Arctic and Alpine Research (INSTAAR) Niwot Ridge LTER
+      Other_Citation_Details: Please cite as: Manley, W.F., Parrish, E.G., and Lestak, L.R., 2009, High-Resolution Orthorectified Imagery and Digital Elevation Models for Study of Environmental Change at Niwot Ridge and Green Lakes Valley, Colorado: Niwot Ridge LTER, INSTAAR, University of Colorado at Boulder, digital media.
+      Online_Linkage: http://niwot.colorado.edu/data/035_gis_data.php
+      Online_Linkage: http://instaar.colorado.edu/QGISL/
+  Description:
+    Abstract: This vector shapefile is a polygon shapefile outlining the extent of the "NWT" project area, for the Niwot Ridge Long Term Ecological Research (LTER) project. The shapefile also covers the Green Lakes Valley portion of the Boulder Creek Critical Zone Observatory (CZO). Other datasets available in this series includes orthorectified aerial photograph mosaics (for 1953, 1972, 1985, approximately 1990, 1999, 2000, 2002, 2004, 2006 and 2008), digital elevation models (DEM's), and accessory map layers. Together, the DEM's and imagery will be of interest to students, research scientists, and others for observation and analysis of natural features and ecosystems.
+    Purpose: The "NWT" extent shapefile facilitates use and display of the dataset.
+    Supplemental_Information: Filenaming convention for this dataset is ProjectArea_project_extent.shp. For example, nwt_project_extent.shp
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20090605
+    Currentness_Reference: ground condition
+  Status:
+    Progress: Complete
+    Maintenance_and_Update_Frequency: None planned
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -105.660038
+      East_Bounding_Coordinate: -105.513033
+      North_Bounding_Coordinate: 40.085636
+      South_Bounding_Coordinate: 40.013575
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: None
+      Theme_Keyword: Cartography
+      Theme_Keyword: Geodesy
+      Theme_Keyword: Geography
+      Theme_Keyword: Hydrography
+      Theme_Keyword: Mapping
+      Theme_Keyword: Photogrammetry
+      Theme_Keyword: Topography
+      Theme_Keyword: Remote
+      Theme_Keyword: Sensing
+      Theme_Keyword: DEM
+      Theme_Keyword: DTM
+      Theme_Keyword: Orthophoto
+      Theme_Keyword: photomosaic
+      Theme_Keyword: orthoimagery
+      Theme_Keyword: scan
+      Theme_Keyword: TIFF
+      Theme_Keyword: aerial
+      Theme_Keyword: photograph
+      Theme_Keyword: digital
+      Theme_Keyword: elevation
+      Theme_Keyword: Land Use / Cover
+      Theme_Keyword: Soils
+      Theme_Keyword: water
+      Theme_Keyword: DSM
+    Theme:
+      Theme_Keyword_Thesaurus: USGS Enterprise Web Thesaurus
+      Theme_Keyword: aerial photographs
+      Theme_Keyword: aerial photos
+      Theme_Keyword: air photos
+      Theme_Keyword: orthoimagery
+      Theme_Keyword: orthophotographs
+      Theme_Keyword: photography
+      Theme_Keyword: remote sensing
+    Theme:
+      Theme_Keyword_Thesaurus: ISO 19115 Topic Category
+      Theme_Keyword: imageryBaseMapsEarthCover
+      Theme_Keyword: elevation
+      Theme_Keyword: climatologyMeteorologyAtmosphere
+    Place:
+      Place_Keyword_Thesaurus: Geographic Names Information System
+      Place_Keyword: US
+      Place_Keyword: Colorado
+      Place_Keyword: Boulder County
+      Place_Keyword: Grand County
+      Place_Keyword: Denver Regional Council of Governments
+    Stratum:
+      Stratum_Keyword_Thesaurus: None
+      Stratum_Keyword: Terrain
+      Stratum_Keyword: Earth
+      Stratum_Keyword: Surface
+      Stratum_Keyword: Ground
+  Access_Constraints: None.
+  Use_Constraints: The following acknowledgment should accompany any publication or citation of these data: "Logistical support and/or data were provided by the NSF supported Niwot Ridge (NWT) Long-Term Ecological Research (LTER) project and the University of Colorado (CU) Mountain Research Station (MRS)." The user of NWT LTER data agrees to provide proper acknowledgment with each usage of the data. Citation of the name(s) of the investigator(s) responsible for the data set, in addition to the generic statement above, constitute proper acknowledgment. Author(s) (including NWT investigators) of published material that makes use of previously unpublished NWT data agree to provide the NWT data manager with a PDF of that material as soon as it becomes available. The user of NWT data agrees not to resell or redistribute shared data.
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: William Manley, PhD
+        Contact_Organization: University of Colorado, Institute of Arctic and Alpine Research (INSTAAR)
+      Contact_Position: Research Scientist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1560 30th Street
+        City: Boulder
+        State_or_Province: CO
+        Postal_Code: 80309-0450
+        Country: USA
+      Contact_Voice_Telephone: 303-735-1300
+      Contact_Facsimile_Telephone: 303-492-6388
+      Contact_Electronic_Mail_Address: william.manley@colorado.edu
+  Data_Set_Credit: U.S. Geological Survey (USGS), Denver Regional Council of Governments (DRCOG), Bohannan Huston Inc. (BHI), Boulder Creek Critical Zone Observatory (CZO), the University of Colorado, Institute of Arctic and Alpine Research (INSTAAR) and Niwot Ridge Long-Term Ecological Research (LTER) project.
+  Native_Data_Set_Environment: Microsoft Windows XP Pro 2002 Service Pack 3; ESRI ArcGIS Desktop 9.3; NPS Metadata Tools version 1.1
+Data_Quality_Information:
+  Attribute_Accuracy:
+    Attribute_Accuracy_Report: Quality checks were performed throughout all processing procedures.
+  Logical_Consistency_Report: Visual examination and quantitative error assessment were conducted to ensure quality control.
+  Completeness_Report: One shapefile was created for the Niwot project extent area. The shapefile covers Niwot Ridge and the Green Lakes Valley extending north to Brainard Lake, south to Silver Lake, east to the Peak to Peak Highway and just west of the Continental Divide.
+  Positional_Accuracy:
+    Horizontal_Positional_Accuracy:
+      Horizontal_Positional_Accuracy_Report: Not applicable
+      Quantitative_Horizontal_Positional_Accuracy_Assessment:
+        Horizontal_Positional_Accuracy_Value: 0 meters
+        Horizontal_Positional_Accuracy_Explanation: Not applicable.
+  Lineage:
+    Process_Step:
+      Process_Description: The Niwot (NWT) project extent area polygon was digitized in ArcMap at the beginning of the project. This box was used to "clip" all data layers in the dataset. FGDC-compliant metadata was then finalized.
+      Process_Date: 20090602
+      Process_Contact:
+        Contact_Information:
+          Contact_Organization_Primary:
+            Contact_Organization: University of Colorado, Institute of Arctic Research and Alpine Research (INSTAAR)
+            Contact_Person: William Manley, PhD
+          Contact_Position: Research Scientist
+          Contact_Address:
+            Address_Type: mailing address
+            Address: 450 UCB
+            City: Boulder
+            State_or_Province: CO
+            Postal_Code: 80309-0450
+            Country: USA
+          Contact_Voice_Telephone: 303-735-1300
+          Contact_Facsimile_Telephone: 303-492-6388
+          Contact_Electronic_Mail_Address: william.manley@colorado.edu
+Spatial_Data_Organization_Information:
+  Direct_Spatial_Reference_Method: Vector
+  Point_and_Vector_Object_Information:
+    SDTS_Terms_Description:
+      SDTS_Point_and_Vector_Object_Type: G-polygon
+      Point_and_Vector_Object_Count: 1
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Planar:
+      Grid_Coordinate_System:
+        Grid_Coordinate_System_Name: Universal Transverse Mercator
+        Universal_Transverse_Mercator:
+          UTM_Zone_Number: 13
+          Transverse_Mercator:
+            Scale_Factor_at_Central_Meridian: 0.999600
+            Longitude_of_Central_Meridian: -105.000000
+            Latitude_of_Projection_Origin: 0.000000
+            False_Easting: 500000.000000
+            False_Northing: 0.000000
+      Planar_Coordinate_Information:
+        Planar_Coordinate_Encoding_Method: coordinate pair
+        Coordinate_Representation:
+          Abscissa_Resolution: 0.000000
+          Ordinate_Resolution: 0.000000
+        Planar_Distance_Units: meters
+    Geodetic_Model:
+      Horizontal_Datum_Name: North American Datum of 1983
+      Ellipsoid_Name: Geodetic Reference System 80
+      Semi-major_Axis: 6378137.000000
+      Denominator_of_Flattening_Ratio: 298.257222
+Entity_and_Attribute_Information:
+  Detailed_Description:
+    Entity_Type:
+      Entity_Type_Label: nwt_project_extent
+      Entity_Type_Definition: Accessory information for orthophoto frames
+      Entity_Type_Definition_Source: University of Colorado
+    Attribute:
+      Attribute_Label: FID
+      Attribute_Definition: Internal feature number.
+      Attribute_Definition_Source: ESRI
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Sequential unique whole numbers that are automatically generated.
+    Attribute:
+      Attribute_Label: Shape
+      Attribute_Definition: Feature geometry.
+      Attribute_Definition_Source: ESRI
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Coordinates defining the features.
+    Attribute:
+      Attribute_Label: Id
+      Attribute_Definition: Internal feature number.
+      Attribute_Definition_Source: ESRI
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Whole numbers generated by user.
+Distribution_Information:
+  Distributor:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: University of Colorado, Institute of Arctic and Alpine Research (INSTAAR) Niwot Ridge LTER
+        Contact_Person: Niwot Ridge LTER Data Manager
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1560 30th Street
+        City: Boulder
+        State_or_Province: CO
+        Postal_Code: 80309-0450
+        Country: USA
+      Contact_Voice_Telephone: 303-492-2594
+      Contact_Facsimile_Telephone: 303-492-6388
+      Contact_Electronic_Mail_Address: lternwt@colorado.edu
+  Resource_Description: Refer to Title of dataset
+  Distribution_Liability: The NSF supported NWT LTER project nor the CU MRS shall not be held liable for improper or incorrect use of the data described and/or contained herein, nor assumes liability for misuse, manipulation or distribution of the data. These data and related graphics (i.e. GIF or JPG format files) are not legal documents and are not intended to be used as such. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived. The user of these data should be aware that, while efforts have been taken to ensure that these data are of the highest quality, there is no guarantee of perfection for the data contained herein and the possibility of errors exists. It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular. Users assume responsibility to determine the usability of the dataset, as well as dataset resolution and accuracy, for their purposes. It is not recommended that the data be used at a scale larger than source scale. The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data. NWT LTER nor CU MRS gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data. It is strongly recommended that these data are directly acquired from the Niwot LTER server and not indirectly through other sources which may have changed the data in some way. Although these data have been processed successfully on computer systems at CU, no warranty expressed or implied is made regarding the utility of the data on other systems for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This disclaimer applies both to individual use of the data and aggregate use with other data.
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: shapefile
+        Format_Version_Number: 1
+        Format_Specification: Hard Drive
+        Format_Information_Content: Source Index Map Layer for Orthorectified Aerial Photograph Mosaic
+        File_Decompression_Technique: no compression applied
+        Transfer_Size: 0.000
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: ftp://niwotftp.colorado.edu/pub/Spatial/packages/nwt7582.zip
+        Offline_Option:
+          Offline_Media: Hard Drive
+          Recording_Format: Standard
+    Fees: As necessary for hard disk and duplication
+    Ordering_Instructions: Contact the Distributor to request the data.
+  Available_Time_Period:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20090615
+Metadata_Reference_Information:
+  Metadata_Date: 20090603
+  Metadata_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Niwot Ridge LTER Data Manager
+        Contact_Organization: University of Colorado, Institute of Arctic and Alpine Research (INSTAAR), Niwot Ridge LTER
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1560 30th Street
+        City: Boulder
+        State_or_Province: CO
+        Postal_Code: 80309-0450
+        Country: USA
+      Contact_Voice_Telephone: 303-492-2594
+      Contact_Facsimile_Telephone: 303-492-6388
+      Contact_Electronic_Mail_Address: lternwt@colorado.edu
+  Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+  Metadata_Standard_Version: FGDC-STD-001-1998
+  Metadata_Time_Convention: local time
+  Metadata_Extensions:
+    Online_Linkage: http://nrdata.nps.gov/profiles/NPS_Profile.xml
+    Profile_Name: NPS NR and GIS Metadata Profile
+  Metadata_Extensions:
+    Online_Linkage: http://www.esri.com/metadata/esriprof80.html
+    Profile_Name: ESRI Metadata Profile

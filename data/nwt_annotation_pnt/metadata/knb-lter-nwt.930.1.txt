@@ -1,0 +1,270 @@
+
+  
+    
+      uid=nwt,o=LTER,dc=ecoinformatics,dc=org
+      read
+      write
+    
+    
+      public
+      read
+    
+  
+  
+    doi:10.6073/pasta/6d9dba05d95be3cd18aaaa14f09faced
+    Landmarks, Niwot Ridge LTER Project Area, Colorado
+    
+      University of Colorado
+      			INSTAAR,4001 Discovery Dr.
+			Boulder, CO 80309-0450  USA
+      lternwt@colorado.edu
+    
+    
+      Niwot Ridge LTER
+      Information Manager
+      			4001 Discovery Drive, UCB 450
+			University of Colorado
+			Boulder, CO 80303  United States
+      lternwt@colorado.edu
+      http://niwot.colorado.edu/
+    
+    
+      NWT_IM
+      pointOfContact
+    
+    2019-02-22
+    English
+    Point shapefile of commonly referenced locations at Niwot Ridge, Green Lakes Valley, and surrounding area.
+    
+      GIS
+      vector
+      None
+    
+    
+      alpine
+      geographic information systems
+      LTER Controlled Vocabulary
+    
+    
+      geoscientificInformation
+      location
+      ISO 19115 Topic Category
+    
+    
+      Colorado
+      Green Lakes Valley
+      Niwot Ridge
+      None
+    
+    
+      
+  This information is released under the Creative Commons license -
+  Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/).
+  The consumer of these data (“Data User” herein) is required to cite it
+  appropriately in any publication that results from its use. The Data
+  User should realize that these data may be actively used by others for
+  ongoing research and that coordination may be necessary to prevent
+  duplicate publication. The Data User is urged to contact the authors
+  of these data if any questions about methodology or results occur.
+  Where appropriate, the Data User is encouraged to consider
+  collaboration or co-authorship with the authors. The Data User should
+  realize that misinterpretation of data may occur if used out of
+  context of the original study. While substantial efforts are made to
+  ensure the accuracy of data and associated documentation, complete
+  accuracy of data sets cannot be guaranteed. All data are made
+  available "as is." The Data User should be aware, however,
+  that data are updated periodically and it is the responsibility of the
+  Data User to check for new versions of the data. The data authors and
+  the repository where these data were obtained shall not be liable for
+  damages resulting from any use or misinterpretation of the data. Thank
+  you.
+
+    
+    
+      
+        Green Lakes Valley, Niwot Ridge, and surrounding area, Niwot Ridge LTER, Colorado
+        
+          -105.651027
+          -105.535446
+          40.077886
+          40.019530
+        
+      
+      
+        
+          
+            1990
+          
+          
+            2019-02-22
+          
+        
+      
+    
+    Point locations of landmarks or commonly referenced sites are useful for map display and annotation.
+    
+      
+        2011-06-03: Dataset copied.[NWT LTER IM]
+        2019-02-22: Attribute table field names corrected and .dbf written out in R using package 'foreign' v.0.8-70. Shapefile xml metadata edited for FGDC compliance and written out in R using package 'XML' v3.98-1.16.[CTW, NWT GRA]
+      
+      asNeeded
+    
+    
+      NWT_IM
+    
+    
+      
+        
+          
+            Methods
+            No information on dataset creator, date of creation, nor methods or sources used to generate dataset. Used in Figure 1.5 (Niwot Ridge overview map) in Bowman (2001). Temporal coverage specified with begin date of 1990, when Tundra Lab construction was completed, and spans to present date, however other locations annotated existed prior to 1990.
+          
+          
+            References
+            
+              
+                
+                  Bowman WD. 2001. Introduction: historical perspective and significance of alpine ecosystem studies. In Bowman WD, Seastedt TR (eds.), Structure and Function of an Alpine Ecosystem, Niwot Ridge, Colorado. New York: Oxford University Press. 337 pp.
+                
+              
+            
+          
+        
+      
+      
+        
+          Note, 2019-02-22: This dataset was made in the 1990s and has been minimally maintained since then (e.g. metadata may have been updated). While best reasonable effort has been made to quality check and describe this dataset, the data and metadata are provided largely as produced and described as they were when created. See .shp.xml metadata file in zipped data folder, or FGDC metadata text file provided with this data package for additional FGDC-compliant metadata concerning data accuracy and data quality.
+        
+      
+    
+    
+      Effects of Climate Change in the Colorado Alpine: Ecosystem Response to Altered Snowpack and Rainfall Regimes
+      
+        Niwot Ridge LTER
+        pointOfContact
+      
+      National Science Foundation:9211776
+    
+    
+      nwt_annotation_pnt
+      Landmarks, Niwot Ridge LTER Project Area, Colorado
+      
+        nwt_annotation_pnt.zip
+        11150
+        d6c8789ae88414db8dc6a316dfcdeb06
+        zip
+        
+          
+            .zip containing ESRI shapefile and xml metadata
+            zip: Version 6.3.5,
+ESRI shapefile and xml metadata: Version 6.2 (Build 9200); Esri ArcGIS 10.5.0.6491
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/930/1/3a7f70953338ba0096eb7b63272a6b97
+          
+        
+      
+      
+        
+          FID
+          Internal feature number.
+          OID
+          
+            
+              
+                
+                  Sequential unique whole numbers that are automatically generated.
+                
+              
+            
+          
+        
+        
+          SHAPE
+          Feature geometry.
+          Geometry
+          
+            
+              
+                
+                  Coordinates defining the features.
+                
+              
+            
+          
+        
+        
+          NAME
+          Name of landmark.
+          string
+          
+            
+              
+                
+                  Free text field.
+                
+              
+            
+          
+        
+      
+      Point
+      40
+      
+        NAD_1983_UTM_Zone_13N
+      
+    
+    
+      nwt_annotation_pnt_browse
+      JPG graphic showing data extent
+      
+        nwt_annotation_pnt_browse.jpg
+        1921957
+        15afd0204df0d0f225409c435503bca5
+        None
+        
+          
+            JPG file
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/930/1/5565ae073f02518d0b9b7b08a14fc556
+          
+        
+      
+      JPG
+    
+    
+      nwt_annotation_pnt_FGDC_metadata
+      ESRI shapefile and xml metadata FGDC metadata in text format
+      
+        nwt_annotation_pnt_FGDC_metadata.txt
+        12080
+        70ebbea83c0bbd44213a6d9f68f5c2ce
+        None
+        ANSI
+        
+          
+            Natural language text
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/930/1/28b9554b0a5f7bb3c5f6a520a3754554
+          
+        
+      
+      
+        
+          FGDC text file validated and generated using USGS Geospatial Metadata Validation Service (https://mrdata.usgs.gov/validation/).
+        
+        
+          Metadata must pass FGDC validation without bad elements, missing elements, or warnings from mp (metadata parser).
+        
+      
+      text
+    
+  

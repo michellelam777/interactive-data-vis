@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-nwt.758.2"
+  system="https://pasta.lternet.edu"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0&#xa;&#x9;&#x9;&#x9;&#x9;http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd">
+  <access authSystem="https://pasta.lternet.edu/authentication"
+    order="allowFirst" scope="document"
+    system="https://pasta.lternet.edu"
+    xmlns:cit="eml://ecoinformatics.org/literature-2.1.0"
+    xmlns:doc="eml://ecoinformatics.org/documentation-2.1.0"
+    xmlns:ds="eml://ecoinformatics.org/dataset-2.1.0"
+    xmlns:prot="eml://ecoinformatics.org/protocol-2.1.0"
+    xmlns:res="eml://ecoinformatics.org/resource-2.1.0"
+    xmlns:stmml="http://www.xml-cml.org/schema/stmml"
+    xmlns:sw="eml://ecoinformatics.org/software-2.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <allow>
+      <principal>uid=NWT,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset id="" system="ESRI MetaID"
+    xmlns:cit="eml://ecoinformatics.org/literature-2.1.0"
+    xmlns:doc="eml://ecoinformatics.org/documentation-2.1.0"
+    xmlns:ds="eml://ecoinformatics.org/dataset-2.1.0"
+    xmlns:prot="eml://ecoinformatics.org/protocol-2.1.0"
+    xmlns:res="eml://ecoinformatics.org/resource-2.1.0"
+    xmlns:stmml="http://www.xml-cml.org/schema/stmml"
+    xmlns:sw="eml://ecoinformatics.org/software-2.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <title>Polygon Shapefile Outlining Extent of the "NWT" Project Area, Niwot Ridge LTER Project Area, Colorado</title>
+    <creator>
+      <individualName>
+        <givenName>William</givenName>
+        <surName>Manley</surName>
+      </individualName>
+      <organizationName>University of Colorado, Institute of Arctic and Alpine Research (INSTAAR)</organizationName>
+      <positionName>Research Scientist</positionName>
+      <address>
+        <deliveryPoint>University of Colorado - INSTAAR, UCB 450</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">303-735-1300</phone>
+      <electronicMailAddress>William.Manley@colorado.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Eric</givenName>
+        <surName>Parrish</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>University of Colorado, Institute of Arctic and Alpine Research (INSTAAR), UCB 450</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>Eric.Parrish@colorado.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Leanne</givenName>
+        <surName>Lestak</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>University of Colorado, Institute of Arctic and Alpine Research (INSTAAR), UCB 450</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>Leanne.Lestak@colorado.edu</electronicMailAddress>
+    </creator>
+    <metadataProvider>
+      <individualName>
+        <surName>Niwot Ridge LTER Data Manager</surName>
+      </individualName>
+      <organizationName>University of Colorado, Institute of Arctic and Alpine Research (INSTAAR), Niwot Ridge LTER</organizationName>
+      <address>
+        <deliveryPoint>1560 30th Street</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <postalCode>80309-0450</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">303-492-2594</phone>
+      <electronicMailAddress>lternwt@colorado.edu</electronicMailAddress>
+    </metadataProvider>
+    <pubDate>20090615</pubDate>
+    <series>High-Resolution Orthorectified Imagery and Digital Elevation Models for Study of Environmental Change at Niwot Ridge and Green Lakes Valley, Colorado</series>
+    <abstract>
+      <para>This vector shapefile is a polygon shapefile outlining the extent of the "NWT" project area, for the Niwot Ridge Long Term Ecological Research (LTER) project. The shapefile also covers the Green Lakes Valley portion of the Boulder Creek Critical Zone Observatory (CZO). Other datasets available in this series includes orthorectified aerial photograph mosaics (for 1953, 1972, 1985, approximately 1990, 1999, 2000, 2002, 2004, 2006 and 2008), digital elevation models (DEM's), and accessory map layers. Together, the DEM's and imagery will be of interest to students, research scientists, and others for observation and analysis of natural features and ecosystems.
+							NOTE: This EML metadata file does not contain important geospatial 
+							data processing information. Before using any NWT LTER geospatial 
+							data read the arcgis metadata XML file in either ISO or FGDC compliant 
+							format, using ArcGIS software (ArcCatalog &gt; description), or by 
+							viewing the .xml file provided with the geospatial dataset.
+						</para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">Cartography</keyword>
+      <keyword keywordType="theme">Geodesy</keyword>
+      <keyword keywordType="theme">Geography</keyword>
+      <keyword keywordType="theme">Hydrography</keyword>
+      <keyword keywordType="theme">Mapping</keyword>
+      <keyword keywordType="theme">Photogrammetry</keyword>
+      <keyword keywordType="theme">Topography</keyword>
+      <keyword keywordType="theme">Remote</keyword>
+      <keyword keywordType="theme">Sensing</keyword>
+      <keyword keywordType="theme">DEM</keyword>
+      <keyword keywordType="theme">DTM</keyword>
+      <keyword keywordType="theme">Orthophoto</keyword>
+      <keyword keywordType="theme">photomosaic</keyword>
+      <keyword keywordType="theme">orthoimagery</keyword>
+      <keyword keywordType="theme">scan</keyword>
+      <keyword keywordType="theme">TIFF</keyword>
+      <keyword keywordType="theme">aerial</keyword>
+      <keyword keywordType="theme">photograph</keyword>
+      <keyword keywordType="theme">digital</keyword>
+      <keyword keywordType="theme">elevation</keyword>
+      <keyword keywordType="theme">Land Use / Cover</keyword>
+      <keyword keywordType="theme">Soils</keyword>
+      <keyword keywordType="theme">water</keyword>
+      <keyword keywordType="theme">DSM</keyword>
+      <keyword keywordType="theme">aerial photographs</keyword>
+      <keyword keywordType="theme">aerial photos</keyword>
+      <keyword keywordType="theme">air photos</keyword>
+      <keyword keywordType="theme">orthoimagery</keyword>
+      <keyword keywordType="theme">orthophotographs</keyword>
+      <keyword keywordType="theme">photography</keyword>
+      <keyword keywordType="theme">remote sensing</keyword>
+      <keyword keywordType="theme">imageryBaseMapsEarthCover</keyword>
+      <keyword keywordType="theme">elevation</keyword>
+      <keyword keywordType="theme">climatologyMeteorologyAtmosphere</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">US</keyword>
+      <keyword keywordType="place">Colorado</keyword>
+      <keyword keywordType="place">Boulder County</keyword>
+      <keyword keywordType="place">Grand County</keyword>
+      <keyword keywordType="place">Denver Regional Council of Governments</keyword>
+      <keywordThesaurus>Geographic Names Information System</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="stratum">Terrain</keyword>
+      <keyword keywordType="stratum">Earth</keyword>
+      <keyword keywordType="stratum">Surface</keyword>
+      <keyword keywordType="stratum">Ground</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <additionalInfo>
+      <section>
+        <title>Edition: Version of title</title>
+        <para>Version 1</para>
+      </section>
+      <section>
+        <title>Data presentation form</title>
+        <para>vector digital data</para>
+      </section>
+      <section>
+        <title>Series publication Identification and issue</title>
+        <para>High-Resolution Orthorectified Imagery and Digital Elevation Models for Study of Environmental Change at Niwot Ridge and Green Lakes Valley, ColoradoExtent of "NWT" Project Area</para>
+      </section>
+      <section>
+        <title>Other citation details</title>
+        <para>Please cite as: Manley, W.F., Parrish, E.G., and Lestak, L.R., 2009, High-Resolution Orthorectified Imagery and Digital Elevation Models for Study of Environmental Change at Niwot Ridge and Green Lakes Valley, Colorado: Niwot Ridge LTER, INSTAAR, University of Colorado at Boulder, digital media.</para>
+      </section>
+      <section>
+        <title>Other descriptive Information about the data set</title>
+        <para>Filenaming convention for this dataset is ProjectArea_project_extent.shp. For example, nwt_project_extent.shp</para>
+      </section>
+    </additionalInfo>
+    <intellectualRights>
+      <section>
+        <title>Niwot LTER Data Policy</title>
+        <para> The following acknowledgment should accompany any publication or 
+									citation of these data: <itemizedlist>
+            <listitem>
+              <para> Logistical support and/or data were provided by the 
+												NSF-supported Niwot Ridge (NWT) Long-Term Ecological Research (LTER) 
+												project and the University of Colorado (CU) Mountain Research Station (MRS). </para>
+            </listitem>
+            <listitem>
+              <para> The user of NWT LTER data agrees to provide proper 
+												acknowledgment with each usage of the data. Citation of 
+												the name(s) of the investigator(s) responsible for the 
+												data set, in addition to the generic statement above, 
+												constitutes proper acknowledgment. Author(s) (including NWT investigators) 
+												of published material that makes use of previously unpublished 
+												NWT data agree to provide the NWT data manager with a PDF of 
+												that material as soon as it becomes available. The user of NWT 
+												data agrees not to resell or redistribute shared data. </para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </section>
+      <section>
+        <title>Disclaimer</title>
+        <para> The NSF-supported NWT LTER project shall not be held liable for 
+									improper or incorrect use of the data described and/or contained 
+									herein, nor assumes liability for misuse, manipulation or distribution 
+									of the data. These data and related graphics (i.e. GIF or JPG format files) 
+									are not legal documents and are not intended to be used as such. 
+									The information contained in these data is dynamic and may change 
+									over time. The data are not better than the original sources from 
+									which they were derived. The user of these data should be aware that, 
+									while efforts have been taken to ensure that these data are of the 
+									highest quality, there is no guarantee of perfection for the data 
+									contained herein and the possibility of errors exists. It is the 
+									responsibility of the data user to use the data appropriately and 
+									in a manner consistent with the limitations of geospatial data in 
+									general and these data in particular. Users assume responsibility 
+									to determine the usability of the dataset, as well as dataset 
+									resolution and accuracy, for their purposes. It is not recommended 
+									that the data be used at a scale larger than the source scale. 
+									The related graphics are intended to aid the data user in acquiring 
+									relevant data; it is not appropriate to use the related graphics 
+									as data. NWT LTER gives no warranty, expressed or implied, as to 
+									the accuracy, reliability, or completeness of these data. It is 
+									strongly recommended that these data be directly acquired from 
+									the NWT LTER server and not indirectly through other sources 
+									that may have changed the data in some way. Although these data 
+									have been processed successfully on computer systems at CU, no 
+									warranty expressed or implied is made regarding the utility of 
+									the data on other systems for general or scientific purposes, 
+									nor shall the act of distribution constitute any such warranty. 
+									This disclaimer applies both to individual use of the data and 
+									aggregate use with other data.  </para>
+      </section>
+      <section>
+        <title>Data Credit</title>
+        <para>U.S. Geological Survey (USGS), Denver Regional Council of Governments (DRCOG), Bohannan Huston Inc. (BHI), Boulder Creek Critical Zone Observatory (CZO), the University of Colorado, Institute of Arctic and Alpine Research (INSTAAR) and Niwot Ridge Long-Term Ecological Research (LTER) project.</para>
+      </section>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url>ftp://niwotftp.colorado.edu/pub/Spatial/packages/nwt7582.zip</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>USColoradoBoulder CountyGrand CountyDenver Regional Council of Governments</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-105.660046</westBoundingCoordinate>
+          <eastBoundingCoordinate>-105.513014</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.085641</northBoundingCoordinate>
+          <southBoundingCoordinate>40.013564</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <singleDateTime>
+          <calendarDate>2009-06-05</calendarDate>
+        </singleDateTime>
+      </temporalCoverage>
+    </coverage>
+    <purpose>
+      <para>The "NWT" extent shapefile facilitates use and display of the dataset.</para>
+    </purpose>
+    <maintenance>
+      <description>
+        <section>
+          <title>Progress</title>
+          <para>Complete</para>
+        </section>
+        <section>
+          <title>Update</title>
+          <para>None planned</para>
+        </section>
+      </description>
+      <maintenanceUpdateFrequency>otherMaintenancePeriod</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <positionName>Information Manager</positionName>
+      <organizationName>LTER Network Office</organizationName>
+      <address>
+        <deliveryPoint>UNM Biology Department, MSC03-2020</deliveryPoint>
+        <deliveryPoint>1 University of New Mexico</deliveryPoint>
+        <city>Albuquerque</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>87131-0001</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">505 277-2535</phone>
+      <phone phonetype="fax">505 277-2541</phone>
+      <electronicMailAddress>tech-support@lternet.edu</electronicMailAddress>
+      <onlineUrl>http://www.lternet.edu</onlineUrl>
+    </contact>
+    <contact>
+      <individualName>
+        <givenName>William</givenName>
+        <surName>Manley</surName>
+      </individualName>
+      <organizationName>University of Colorado, Institute of Arctic and Alpine Research (INSTAAR)</organizationName>
+      <positionName>Research Scientist</positionName>
+      <address>
+        <deliveryPoint>University of Colorado - INSTAAR, UCB 450</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">303-735-1300</phone>
+      <electronicMailAddress>William.Manley@colorado.edu</electronicMailAddress>
+    </contact>
+    <publisher>
+      <organizationName>University of Colorado, Institute of Arctic and Alpine Research (INSTAAR) Niwot Ridge LTER</organizationName>
+    </publisher>
+    <pubPlace>Boulder, CO</pubPlace>
+    <spatialVector id="nwt_project_extent.zip">
+      <alternateIdentifier>nwt_project_extent</alternateIdentifier>
+      <entityName>nwt_project_extent.zip</entityName>
+      <entityDescription>This vector shapefile is a polygon shapefile outlining the extent of the "NWT" project area, for the Niwot Ridge Long Term Ecological Research (LTER) project. The shapefile also covers the Green Lakes Valley portion of the Boulder Creek Critical Zone Observatory (CZO). Other datasets available in this series includes orthorectified aerial photograph mosaics (for 1953, 1972, 1985, approximately 1990, 1999, 2000, 2002, 2004, 2006 and 2008), digital elevation models (DEM's), and accessory map layers. Together, the DEM's and imagery will be of interest to students, research scientists, and others for observation and analysis of natural features and ecosystems.</entityDescription>
+      <physical>
+        <objectName>nwt_project_extent.zip</objectName>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Shapefile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/758/2/8fbb3bd263d0727266ec639d63cd55bf</url>
+          </online>
+        </distribution>
+      </physical>
+      <methods>
+        <methodStep>
+          <description>
+            <section>
+              <para>The Niwot (NWT) project extent area polygon was digitized in ArcMap at the beginning of the project. This box was used to "clip" all data layers in the dataset. FGDC-compliant metadata was then finalized.</para>
+            </section>
+          </description>
+        </methodStep>
+      </methods>
+      <attributeList>
+        <attribute id="FID">
+          <attributeName>FID</attributeName>
+          <attributeDefinition>Internal feature number.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sequential unique whole numbers that are automatically generated.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="Shape">
+          <attributeName>Shape</attributeName>
+          <attributeDefinition>Feature geometry.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Coordinates defining the features.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="Id">
+          <attributeName>Id</attributeName>
+          <attributeDefinition>Internal feature number.</attributeDefinition>
+          <storageType typeSystem="http://www.esri.com/metadata/esriprof80.html"/>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whole numbers generated by user.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <geometry>Polygon</geometry>
+      <geometricObjectCount>1</geometricObjectCount>
+      <spatialReference>
+        <horizCoordSysDef name="Transverse Mercator">
+          <projCoordSys>
+            <geogCoordSys>
+              <datum name="D North American 1983"/>
+              <spheroid denomFlatRatio="298.257222101" name="GRS 1980" semiAxisMajor="6378137.0"/>
+              <primeMeridian longitude="0.0" name=" Greenwich"/>
+              <unit name="degree"/>
+            </geogCoordSys>
+            <projection name="Transverse Mercator">
+              <parameter
+                description="a multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian."
+                name="Scale factor at central meridian" value="0.9996"/>
+              <parameter
+                description="The line of logitude at the center of the map projection"
+                name="Longitude at central meridian" value="-105.0"/>
+              <parameter
+                description="The latitude chosen as center of the projection"
+                name="Latitude of projection origin" value="0.0"/>
+              <parameter
+                description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+                name="False Easting" value="500000.0"/>
+              <parameter
+                description="A value added in a rectangular coordinate system, usually used to avoid negative values"
+                name="False Northing" value="0.0"/>
+              <unit name="meter"/>
+            </projection>
+          </projCoordSys>
+        </horizCoordSysDef>
+      </spatialReference>
+      <horizontalAccuracy>
+        <accuracyReport>Not applicable</accuracyReport>
+        <quantitativeAccuracyReport>
+          <quantitativeAccuracyValue>Not applicable</quantitativeAccuracyValue>
+          <quantitativeAccuracyMethod>Not applicable</quantitativeAccuracyMethod>
+        </quantitativeAccuracyReport>
+      </horizontalAccuracy>
+      <verticalAccuracy>
+        <accuracyReport>Vertical Accuracy Report not present</accuracyReport>
+      </verticalAccuracy>
+    </spatialVector>
+    <otherEntity>
+      <entityName>Shapefile_FGDC_metadata</entityName>
+      <entityDescription>Shapefile metadata in text format</entityDescription>
+      <physical>
+        <objectName>nwt7582_FGDC_metadata.txt</objectName>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>Natural language text</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/758/2/24f32f25634e810babf0fe43bd58fa7f</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>Shapefile metadata in text format</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>
