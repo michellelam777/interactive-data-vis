@@ -122,7 +122,7 @@ map <- leaflet() %>%
   # scale bar
   addScaleBar(position = "bottomright", options = scaleBarOptions(imperial = FALSE))
 
-map
+map 
 
 # some things can only be implemented in shiny app, for example disappearing legends when using custom icons: 
 
