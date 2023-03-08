@@ -14,6 +14,7 @@ library(randomcoloR) # random color generator
 # Javascript package wrappers
 library(leaflet) # interactive map
 library(plotly) # interactive plots
+library(DT) # interactive tables
 
 ##########################################################################-
 # 2. spatial data ---------------------------------------------------------
@@ -158,8 +159,22 @@ ggplotly(pika_static,
   ))
 
 
+##########################################################################-
+# 5. DT table -------------------------------------------------------------
+##########################################################################-
 
-
+nwt_pikas %>% 
+  select(date, site, station, sex, concentration_pg_g, elev_m) %>% 
+  datatable(editable = "cell",
+            colnames = c("Date", "Site", "Station", "Sex", "Concentration (pg/g)", "Elevation (m)"),
+            filter = "top",
+            options = list(pageLength = 20,
+                           initComplete = JS(
+                             "function(settings, json) {",
+                             "$('body').css({'font-family': 'Garamond'});",
+                             "}"
+                           ))) %>% 
+  formatStyle(c('date', 'station', 'concentration_pg_g'), backgroundColor = 'lightblue')
 
 
 
