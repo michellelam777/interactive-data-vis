@@ -85,9 +85,9 @@ pikas <- st_as_sf(x = nwt_pikas, coords = c("utm_easting", "utm_northing")) %>%
 
 map <- leaflet() %>% 
   # base maps
-  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI World Imagery") %>% 
+  addProviderTiles(providers$Thunderforest.MobileAtlas, group = "Thunderforest") %>% 
   addProviderTiles(providers$OpenTopoMap, group = "OpenTopoMap") %>%
-  addProviderTiles(providers$Stamen.Watercolor, group = "Watercolor") %>%
+  # addProviderTiles(providers$Stamen.Watercolor, group = "Watercolor") %>%
   
   # map layers: project boundary and vegetation classes
   addPolygons(data = project_extent, color = "green", group = "NWT project extent") %>%
@@ -109,7 +109,7 @@ map <- leaflet() %>%
   
   # layers control
   addLayersControl(
-    baseGroups = c("ESRI World Imagery", "OpenTopoMap", "Watercolor"),
+    baseGroups = c("Thunderforest", "OpenTopoMap"),
     overlayGroups = c("NWT project extent", "Vegetation", "Snow surveys", "Landmarks", "Pikas"),
     options = layersControlOptions(collapsed = TRUE)
   ) %>% 
