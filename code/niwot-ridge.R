@@ -3,15 +3,18 @@
 # 1. libraries ------------------------------------------------------------
 ##########################################################################-
 
+# general use
 library(here) # file organization
 library(tidyverse) # manipulating
 library(sf) # reading in spatial data, etc.
-library(leaflet) # interactive map
 library(janitor) # cleaning variable names
-# library(ggmap) # maps in ggplot
-# register_google(key = "AIzaSyD0RcCQqXwhEMiqhOWFGYO456Nkd0dSjTs") # google API to use with ggmap
-# library(ggsn) # package for inserting scale bar and north
-library(lterdatasampler)
+library(lterdatasampler) # data source
+library(randomcoloR) # random color generator
+
+# Javascript package wrappers
+library(leaflet) # interactive map
+library(plotly) # interactive plots
+library(DT) # interactive tables
 
 ##########################################################################-
 # 2. spatial data ---------------------------------------------------------
@@ -80,7 +83,7 @@ pikas <- st_as_sf(x = nwt_pikas, coords = c("utm_easting", "utm_northing")) %>%
   ))
 
 ##########################################################################-
-# 3. mapping --------------------------------------------------------------
+# 3. leaflet map ----------------------------------------------------------
 ##########################################################################-
 
 map <- leaflet() %>% 
@@ -124,5 +127,61 @@ map <- leaflet() %>%
 
 map 
 
-# some things can only be implemented in shiny app, for example disappearing legends when using custom icons: 
+##########################################################################-
+# 4. plotly graph ---------------------------------------------------------
+##########################################################################-
+
+elev_gradient <- colorRamp(c("lightblue", "darkblue"), 20)
+
+pika_static <- ggplot(pikas, aes(x = date, y = concentration_pg_g, text = marker_text)) +
+  geom_point(aes(color = elev_m, size = concentration_pg_g)) +
+  scale_color_gradient(low = "lightblue", high = "darkblue") +
+  labs(x = "Date", y = "Concentration (pg/g)", 
+       title = "There is no clear relationship between sampling date and hormone concentration.") +
+  theme_bw() +
+  theme(legend.position = "none",
+        text = element_text(family = "Garamond"), 
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14),
+        plot.title = element_text(size = 16),
+        plot.title.position = "plot")
+
+pika_static
+
+ggplotly(pika_static,
+         tooltip = c("text"), 
+         showlegend = FALSE) %>% 
+  layout(hoverlabel = list(
+    font = list(
+      family = "Garamond",
+      size = 12
+    )
+  ))
+
+
+##########################################################################-
+# 5. DT table -------------------------------------------------------------
+##########################################################################-
+
+nwt_pikas %>% 
+  select(date, site, station, sex, concentration_pg_g, elev_m) %>% 
+  datatable(editable = "cell",
+            colnames = c("Date", "Site", "Station", "Sex", "Concentration (pg/g)", "Elevation (m)"),
+            filter = "top",
+            options = list(pageLength = 20,
+                           initComplete = JS(
+                             "function(settings, json) {",
+                             "$('body').css({'font-family': 'Garamond'});",
+                             "}"
+                           ))) %>% 
+  formatStyle(c('date', 'station', 'concentration_pg_g'), backgroundColor = 'lightblue')
+
+
+
+
+
+
+
+
+
 
