@@ -184,6 +184,9 @@ maples <- hbr_maples %>%
     "Transect: ", transect, "<br>", 
     "Sample: ", sample, "<br>"
   ))
+
+sugarmap <- image_read(here::here("images", "Pbroks13-inaturalist.png")) %>% 
+  as.raster()
 ```
 
 
@@ -200,6 +203,7 @@ maples_static <- maples %>%
   labs(x = "Year", y = "Stem length (cm)", color = "Watershed",
        title = "Sugar maple length is variable, but they tend to grow through time.") +
   facet_grid(~watershed) +
+  annotation_raster(sugarmap, xmin = 1, xmax = 1, ymin = 60, ymax = 61) +
   theme_classic() +
   theme(legend.position = "none",
         text = element_text(family = "Garamond"), 
