@@ -1,6 +1,6 @@
 # Spatial data visualization
 
-This is a workshop written for UCSB MEDS Winter 2023.
+This is a workshop written for UCSB MEDS Winter 2023. The rendered template document is [here](https://an-bui.github.io/interactive-data-vis/code/interactive-data-vis.html).
 
 ## Caveats
 
