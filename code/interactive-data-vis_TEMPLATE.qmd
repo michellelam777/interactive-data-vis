@@ -1,0 +1,186 @@
+---
+title: "Interactive data visualization using Javascript packages"
+format: html
+---
+
+# Set up
+```{r}
+# general use
+library(here) # file organization
+library(tidyverse) # manipulating
+library(sf) # reading in spatial data, etc.
+library(janitor) # cleaning variable names
+library(lterdatasampler) # data source
+library(randomcoloR) # random color generator
+library(ggbeeswarm) # beeswarm geoms
+library(magick)
+
+# Javascript package wrappers
+library(leaflet) # interactive map
+library(plotly) # interactive plots
+library(ggiraph) # more interactive plots
+library(echarts4r) # even more interactive plots
+```
+
+# Interactive maps
+
+`leaflet` is the go-to package for interactive maps. It's not _super_ for static maps, but for anyone looking to get an interactive map on their dashboard, this is a great option. In this example, we're going to use some data from Niwot Ridge LTER to create a map of vegetation classes, snow surveys, pika locations, and landmarks at the site.  
+
+Here's some cleaning code (we're not going through this step by step):
+
+```{r}
+# project extent
+
+project_extent <- st_read(here::here("data", "nwt_project_extent", "shapefiles"), layer = "nwt_project_extent") %>% 
+  st_transform(crs = 4326)
+
+# snow survey 
+
+snow2018 <- st_read(here::here("data", "ss2018", "shapefiles"), layer = "ss2018") %>% 
+  st_transform(crs = 4326) %>% 
+  clean_names() %>% 
+  mutate(comments = case_when(
+    comments == "NaN" ~ "none",
+    TRUE ~ comments
+  )) %>% 
+  mutate(marker_text = paste(
+    "Depth:", snowdepth, "<br>",
+    "Time:", sampletime, "<br>",
+    "Recorders:", recorders, "<br>",
+    "Comments:", comments, "<br>"
+  )) 
+
+# vegetation classes 
+
+veg <- st_read(here::here("data", "veg", "shapefiles"), layer = "veg") %>% 
+  st_transform(crs = 4326) %>% 
+  clean_names() %>% 
+  mutate(marker_text = paste(
+    "Type:", type, "<br>",
+    "Area:", area, "<br>",
+    "Perimeter:", perimeter, "<br>"
+  )) 
+
+# generating random colors for vegetation classes
+veg_list <- veg %>% 
+  pull(type) %>% 
+  unique()
+
+colors <- c(
+  "#1c6e73", randomColor(count = 23, luminosity = "random"), "#e3e5e6"
+)
+veg_pal <- colorFactor(colors, domain = veg$type, ordered = TRUE)
+
+# landmarks 
+
+landmarks <- st_read(here::here("data", "nwt_annotation_pnt", "shapefiles"), layer = "nwt_annotation_pnt") %>% 
+  st_transform(crs = 4326) %>% 
+  clean_names() %>% 
+  mutate(marker_text = paste(
+    "Name:", name
+  )) 
+
+# pikas
+
+pikas <- st_as_sf(x = nwt_pikas, coords = c("utm_easting", "utm_northing")) %>% 
+  st_set_crs("+proj=utm +zone=13 +datum=NAD83 +units=m") %>% 
+  st_transform("+proj=longlat +datum=WGS84") %>% 
+  mutate(marker_text = paste(
+    "Date:", date, "<br>",
+    "Station:", station, "<br>",
+    "Sex:", sex, "<br>"
+  ))
+```
+
+
+And here's a map: 
+
+```{r}
+
+```
+
+
+# Interactive plots 
+
+You can build interactivity into your plots using packages that are essentially wrappers for Javascript: you can get an interactive framework without having to learn a whole new language. We're going to make the following plot interactive: 
+
+```{r}
+bg_col <- "#232324"
+text_col <- "#f2f2f2"
+  
+weather <- arc_weather %>% 
+  mutate(year = year(date),
+         month = month(date),
+         day = day(date)) %>% 
+  mutate(season = case_when(
+    month %in% c(12, 1, 2) ~ "winter",
+    month %in% c(3, 4, 5) ~ "spring",
+    month %in% c(6, 7, 8) ~ "summer",
+    month %in% c(9, 10, 11) ~ "fall"
+  ),
+  season = fct_relevel(season, c("winter", "spring", "summer", "fall"))) %>% 
+  mutate(julian = yday(date)) %>% 
+  mutate(marker_text = paste(
+    "Date: ", date, "<br>",
+    "Mean air temp (C): ", mean_airtemp, "<br>",
+    "Daily precipitation (mm): ", daily_precip, "<br>",
+    "Mean windspeed (m/s): ", mean_windspeed, "<br>"
+  ))
+```
+
+Static plot:
+
+```{r}
+weather_static <- ggplot(data = weather, aes(x = julian, y = mean_airtemp, color = mean_airtemp, text = marker_text)) +
+  geom_point(alpha = 0.8) +
+  scale_color_gradient2(low = "#28ACE6", mid = "#FFFFFF", high = "#C13C31") +
+  # scale_color_stepsn(colors = colorRampPalette(c("#cee2f5", "#1e619e"))(31), 
+  #                    breaks = seq(1988, 2018, 1)) +
+  geom_hline(yintercept = 0, lty = 2, color = text_col, linewidth = 1) +
+  scale_x_continuous(expand = c(0, 0), limits = c(0, 366)) +
+  scale_y_continuous(expand = c(0, 0), limits = c(-56, 25)) +
+  labs(x = "Julian day", y = "degrees Celsius",
+       title = "Toolik Field Station is below freezing for most of the year.",
+       subtitle = "Each point represents mean air temperature on a given day of the year (Julian day) colored by temperature.") +
+  theme_bw() +
+  theme(text = element_text(family = "Garamond", color = text_col),
+        panel.grid = element_blank(),
+        # legend.position = "none",
+        panel.background = element_rect(fill = bg_col, color = bg_col),
+        panel.border = element_blank(),
+        plot.background = element_rect(fill = bg_col, color = bg_col),
+        axis.text = element_text(color = text_col, size = 14),
+        axis.line = element_blank(),
+        axis.title = element_text(size = 14),
+        axis.ticks = element_blank(),
+        plot.title = element_text(size = 20, face = "bold"),
+        legend.background = element_rect(fill = bg_col))
+weather_static 
+```
+
+# Option 1: Turn a `ggplot` object into an interactive graph with `plotly`
+
+The easiest way to build in interactivity is to use `plotly` to get an interactive plot from a `ggplot` object.  
+
+```{r}
+
+```
+
+# Option 2: Use `ggiraph`'s unique geoms
+
+```{r}
+
+```
+
+# Option 3: `echarts4r`
+
+This is the most complicated option - the documentation is fairly minimal. However, it's cool.
+
+```{r}
+
+```
+
+
+
+
+
