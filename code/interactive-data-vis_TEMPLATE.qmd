@@ -12,14 +12,15 @@ library(sf) # reading in spatial data, etc.
 library(janitor) # cleaning variable names
 library(lterdatasampler) # data source
 library(randomcoloR) # random color generator
-library(ggbeeswarm) # beeswarm geoms
-library(magick)
+#library(ggbeeswarm) # beeswarm geoms
+#library(magick)
 
 # Javascript package wrappers
 library(leaflet) # interactive map
 library(plotly) # interactive plots
 library(ggiraph) # more interactive plots
 library(echarts4r) # even more interactive plots
+library(lubridate)
 ```
 
 # Interactive maps
@@ -96,6 +97,40 @@ pikas <- st_as_sf(x = nwt_pikas, coords = c("utm_easting", "utm_northing")) %>%
 And here's a map: 
 
 ```{r}
+map <- leaflet() |> 
+  # base map
+  addProviderTiles(providers$OpenTopoMap, group = "OpenTopoMap") |> 
+  
+  # map layers: project boundary and vegetation classes
+  addPolygons(data = project_extent, color = "#488f32", group = "NWT project extent") |> 
+  addPolygons(data = veg, group = "Vegetation", popup = ~marker_text,
+              fillColor = ~veg_pal(type), fillOpacity = 1, stroke = FALSE) |> # stroke is boundary line around polygon
+
+  # markers
+  addCircleMarkers(data = snow2018, group = "Snow surveys",
+                   color = "lightblue", stroke = FALSE, fillOpacity = 1,
+                   popup = ~marker_text,
+                   radius = 5,
+                   popupOptions = popupOptions(closeOnClick = FALSE)) |> # if you click off something it will dissappear
+  addCircleMarkers(data = landmarks, group = "Landmarks",
+                   color = "yellow", stroke = FALSE, fillOpacity = 1,
+                   radius = 5,
+                   popupOptions = popupOptions(closeOnClick = FALSE)) |> 
+  
+  # layers control
+  addLayersControl(
+    baseGroups = c("OpenTopoMap"),
+    overlayGroups = c("NWT project extent","Vegetation", "Snow surveys", "Landmarks"),
+    options = layersControlOptions(collapsed = TRUE)
+  ) |> 
+  
+  # legends
+  addLegend(values = 1, group = "Snow surveys", position = "bottomleft", 
+            labels = "Snow surveys", colors = "lightblue", opacity = 1) |> 
+  addLegend(values = 2, group = "Landmarks", position = "bottomleft", 
+            labels = "Landmarks", colors = "yellow", opacity = 1)
+
+map
 
 ```
 
@@ -131,6 +166,7 @@ weather <- arc_weather %>%
 Static plot:
 
 ```{r}
+# add text as argument in aes to specify that tooltip is in the text argument
 weather_static <- ggplot(data = weather, aes(x = julian, y = mean_airtemp, color = mean_airtemp, text = marker_text)) +
   geom_point(alpha = 0.8) +
   scale_color_gradient2(low = "#28ACE6", mid = "#FFFFFF", high = "#C13C31") +
@@ -163,13 +199,58 @@ weather_static
 The easiest way to build in interactivity is to use `plotly` to get an interactive plot from a `ggplot` object.  
 
 ```{r}
+weather_ggplotly <- ggplotly(weather_static, tooltip = c("text")) |> 
+  layout(title = list(
+    text = paste0(
+      "Toolik Field Station is below freezing for most of the year.",
+      "<br>",
+      "<sup>",
+      "Each point represents mean air temperature on a given day of the year (Julian day) colored by temperature.",
+      "</sup>"
+    )
+  ))
 
+weather_ggplotly
 ```
 
 # Option 2: Use `ggiraph`'s unique geoms
 
 ```{r}
+weather_ggiraph <- ggplot(data = weather, aes(x = julian, y = mean_airtemp, color = mean_airtemp, tooltip = marker_text, data_id = marker_text)) +
+  # special ggiraph geom
+  geom_point_interactive(alpha = 0.8) +
+  scale_color_gradient2(low = "#28ACE6", mid = "#FFFFFF", high = "#C13C31") +
+  # scale_color_stepsn(colors = colorRampPalette(c("#cee2f5", "#1e619e"))(31), 
+  #                    breaks = seq(1988, 2018, 1)) +
+  geom_hline(yintercept = 0, lty = 2, color = text_col, linewidth = 1) +
+  scale_x_continuous(expand = c(0, 0), limits = c(0, 366)) +
+  scale_y_continuous(expand = c(0, 0), limits = c(-56, 25)) +
+  labs(x = "Julian day", y = "degrees Celsius",
+       title = "Toolik Field Station is below freezing for most of the year.",
+       subtitle = "Each point represents mean air temperature on a given day of the year (Julian day) colored by temperature.") +
+  theme_bw() +
+  theme(text = element_text(family = "Garamond", color = text_col),
+        panel.grid = element_blank(),
+        # legend.position = "none",
+        panel.background = element_rect(fill = bg_col, color = bg_col),
+        panel.border = element_blank(),
+        plot.background = element_rect(fill = bg_col, color = bg_col),
+        axis.text = element_text(color = text_col, size = 14),
+        axis.line = element_blank(),
+        axis.title = element_text(size = 14),
+        axis.ticks = element_blank(),
+        plot.title = element_text(size = 20, face = "bold"),
+        legend.background = element_rect(fill = bg_col))
+weather_ggiraph
 
+weather_ggiraph_interactive <- girafe(
+  ggobj = weather_ggiraph,
+  width = 8, height = 5
+)
+
+weather_ggiraph_interactive
+
+# automatically allows download of image
 ```
 
 # Option 3: `echarts4r`
@@ -177,7 +258,13 @@ The easiest way to build in interactivity is to use `plotly` to get an interacti
 This is the most complicated option - the documentation is fairly minimal. However, it's cool.
 
 ```{r}
+airtemp_echarts4r <- weather |> 
+  group_by(year) |> 
+  e_charts(x = julian, timeline = TRUE) |> 
+  e_scatter(serie = mean_airtemp) |> 
+  e_visual_map(min = -56, max = 21)
 
+airtemp_echarts4r
 ```
 
 
